@@ -148,34 +148,16 @@ public class MockServletContext implements ServletContext {
         throw new UnsupportedOperationException();
     }
 
-    @Override
-    @Deprecated
-    public Servlet getServlet(String name) throws ServletException {
-        throw new UnsupportedOperationException();
-    }
 
-    @Override
-    @Deprecated
-    public Enumeration<Servlet> getServlets() {
-        throw new UnsupportedOperationException();
-    }
 
-    @Override
-    @Deprecated
-    public Enumeration<String> getServletNames() {
-        throw new UnsupportedOperationException();
-    }
+
 
     @Override
     public void log(String msg) {
         logger.info(msg);
     }
 
-    @Override
-    @Deprecated
-    public void log(Exception exception, String msg) {
-       log(msg, exception);
-    }
+
 
     @Override
     public void log(String message, Throwable throwable) {

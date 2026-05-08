@@ -1,5 +1,9 @@
 # Changes
 
+## 1.6.1 2026-05-08
+* Fix for CVE-2025-5456 Log injection
+* Support servlet 6 and upgrade some libraries to address vulnerabilities
+
 ## 1.5.0 / YYYY-MM-DD
 
 * Tiles: Correct `I18nFactorySet.initFactory` under windows

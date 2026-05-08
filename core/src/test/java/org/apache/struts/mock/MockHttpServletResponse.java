@@ -70,13 +70,13 @@ public class MockHttpServletResponse implements HttpServletResponse {
         return url;
     }
 
-    @Override
+    
     @Deprecated
     public String encodeUrl(String url) {
         return encodeURL(url);
     }
 
-    @Override
+    
     @Deprecated
     public String encodeRedirectUrl(String url) {
         return encodeRedirectURL(url);

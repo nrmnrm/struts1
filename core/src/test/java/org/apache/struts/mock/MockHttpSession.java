@@ -106,20 +106,15 @@ public class MockHttpSession implements HttpSession {
         return (this.servletContext);
     }
 
-    @Deprecated
-    @Override
-    public jakarta.servlet.http.HttpSessionContext getSessionContext() {
-        throw new UnsupportedOperationException();
-    }
 
     @Deprecated
-    @Override
+    
     public Object getValue(String name) {
         throw new UnsupportedOperationException();
     }
 
     @Deprecated
-    @Override
+    
     public String[] getValueNames() {
         throw new UnsupportedOperationException();
     }
@@ -135,7 +130,7 @@ public class MockHttpSession implements HttpSession {
     }
 
     @Deprecated
-    @Override
+    
     public void putValue(String name, Object value) {
         throw new UnsupportedOperationException();
     }
@@ -146,7 +141,7 @@ public class MockHttpSession implements HttpSession {
     }
 
     @Deprecated
-    @Override
+    
     public void removeValue(String name) {
         throw new UnsupportedOperationException();
     }

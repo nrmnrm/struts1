@@ -28,6 +28,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import org.apache.commons.text.StringEscapeUtils;
+
 import org.apache.struts.Globals;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -226,7 +228,7 @@ public abstract class LookupDispatchAction extends DispatchAction {
         if (key == null) {
             String message =
                 messages.getMessage("dispatch.resource", mapping.getPath());
-            log.error("{} '{}'", message, keyName);
+            log.error("{} '{}'", message, StringEscapeUtils.escapeJava(keyName));
             throw new ServletException(message);
         }
 

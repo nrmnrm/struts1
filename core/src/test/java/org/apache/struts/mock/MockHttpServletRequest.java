@@ -33,6 +33,7 @@ import jakarta.servlet.AsyncContext;
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletConnection;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletInputStream;
 import jakarta.servlet.ServletRequest;
@@ -67,6 +68,9 @@ public class MockHttpServletRequest implements HttpServletRequest {
      * <p> The set of request attributes. </p>
      */
     protected HashMap<String, Object> attributes = new HashMap<>();
+	
+	
+	
 
     /**
      * <p> The context path for this request. </p>
@@ -364,7 +368,7 @@ public class MockHttpServletRequest implements HttpServletRequest {
     }
 
     @Deprecated
-    @Override
+
     public boolean isRequestedSessionIdFromUrl() {
         return isRequestedSessionIdFromURL();
     }
@@ -536,7 +540,7 @@ public class MockHttpServletRequest implements HttpServletRequest {
     }
 
     @Deprecated
-    @Override
+
     public String getRealPath(String path) {
         throw new UnsupportedOperationException();
     }
@@ -565,6 +569,20 @@ public class MockHttpServletRequest implements HttpServletRequest {
     public ServletContext getServletContext() {
         throw new UnsupportedOperationException();
     }
+
+
+    public ServletConnection getServletConnection() {
+        throw new UnsupportedOperationException();
+    }
+
+public String getProtocolRequestId(){
+	throw new UnsupportedOperationException();
+}
+
+public String getRequestId(){
+	throw new UnsupportedOperationException();
+}
+
 
     @Override
     public AsyncContext startAsync() throws IllegalStateException {
