@@ -10,7 +10,7 @@ For documentation see [https://weblegacy.github.io/struts1](https://weblegacy.gi
 
 | Version                                                                   | JEE-Version  | Java-Version | Servlet | JSP | EL  | JSF | JSTL |
 |--------------------------------------------------------------------------:|-------------:|-------------:|--------:|----:|----:|----:|-----:|
-| [1.6.1](https://github.com/nrmnrm/struts1)                                | Jakarta EE10 |           17 |     6.0 | 3.0 | 4.0 | 3.0 |  2.0 |
+| [1.6.1](https://github.com/nrmnrm/struts1/releases/tag/v1.6.1)            | Jakarta EE10 |           17 |     6.0 | 3.0 | 4.0 | 3.0 |  2.0 |
 | [1.5.0-RC2](https://github.com/weblegacy/struts1/releases/tag/v1.5.0_rc2) | Jakarta EE 9 |            8 |     5.0 | 3.0 | 4.0 | 3.0 |  2.0 |
 | [1.5.0-RC1](https://github.com/weblegacy/struts1/releases/tag/v1.5.0_rc1) | Jakarta EE 9 |            8 |     5.0 | 3.0 | 4.0 | 3.0 |  2.0 |
 |         [1.4.5](https://github.com/weblegacy/struts1/releases/tag/v1.4.5) | Jakarta EE 8 |            8 |     4.0 | 2.3 | 3.0 | 2.3 |  1.2 |
