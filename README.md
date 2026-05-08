@@ -56,7 +56,7 @@ For documentation see [https://weblegacy.github.io/struts1](https://weblegacy.gi
 * [CVE-2016-1182 - Improper Input Validation in Apache Struts](https://github.com/advisories/GHSA-5ggr-mpgw-3mgx)
 * [CVE-2023-34396 - Apache Struts vulnerable to memory exhaustion](https://github.com/advisories/GHSA-4g42-gqrg-4633)
 * [CVE-2023-49735 - Apache Tiles: Unvalidated input may lead to path traversal and XXE](https://github.com/advisories/GHSA-qw4h-3xjj-84cc)
-* [CVE-2025-54656— Apache Struts Extras: Improper Output Neutralization for Logs]
+* [CVE-2025-54656 - Apache Struts Extras: Improper Output Neutralization for Logs](https://github.com/advisories/GHSA-cx25-xg7c-xfm5)
 
 ## Building Strus1 - Reloaded
 
