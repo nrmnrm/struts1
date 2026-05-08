@@ -10,6 +10,7 @@ For documentation see [https://weblegacy.github.io/struts1](https://weblegacy.gi
 
 | Version                                                                   | JEE-Version  | Java-Version | Servlet | JSP | EL  | JSF | JSTL |
 |--------------------------------------------------------------------------:|-------------:|-------------:|--------:|----:|----:|----:|-----:|
+| [1.6.1.](https://github.com/nrmnrm/struts1)                          | Jakarta EE10 |           17 |     6.0 | 3.0 | 4.0 | 3.0 |  2.0 |
 | [1.5.0-RC2](https://github.com/weblegacy/struts1/releases/tag/v1.5.0_rc2) | Jakarta EE 9 |            8 |     5.0 | 3.0 | 4.0 | 3.0 |  2.0 |
 | [1.5.0-RC1](https://github.com/weblegacy/struts1/releases/tag/v1.5.0_rc1) | Jakarta EE 9 |            8 |     5.0 | 3.0 | 4.0 | 3.0 |  2.0 |
 |         [1.4.5](https://github.com/weblegacy/struts1/releases/tag/v1.4.5) | Jakarta EE 8 |            8 |     4.0 | 2.3 | 3.0 | 2.3 |  1.2 |
@@ -26,9 +27,7 @@ For documentation see [https://weblegacy.github.io/struts1](https://weblegacy.gi
   * Include missing taglib docs, because the current version of [tlddoc](https://github.com/weblegacy/tlddoc) is not able to generate it (upgrade to `Jakarta Server Pages 3.0` is currently missing).
 * 1.4.6
   * Cherry-Pick relevant changes from version `1.5.0`
-* 1.6.0
-  * Bump JDK 8 to 11
-  * Upgrade to Jakarta EE 10
+
 
 ## Changes since version 1.3.10
 
@@ -39,9 +38,9 @@ For documentation see [https://weblegacy.github.io/struts1](https://weblegacy.gi
 * Correct example-apps
 * Complete JUnit5- and integration-test (rewrite old ones)
 * Logging: Use [SLF4J](https://www.slf4j.org/) instead [Commons-Logging](https://commons.apache.org/proper/commons-logging/index.html)
-* JDK 1.4 --> JDK 8
+* JDK 1.4 --> JDK 17
   * Tested with JDK 8, 11, 17 and 21
-* Servlet-API 2.3 --> 5.0
+* Servlet-API 2.3 --> 6.0
 * JSP 2.0 --> 3.0
 * JSP-EL 2.0 --> 4.0
 * JSF 1.0.9 --> 3.0
@@ -57,13 +56,14 @@ For documentation see [https://weblegacy.github.io/struts1](https://weblegacy.gi
 * [CVE-2016-1182 - Improper Input Validation in Apache Struts](https://github.com/advisories/GHSA-5ggr-mpgw-3mgx)
 * [CVE-2023-34396 - Apache Struts vulnerable to memory exhaustion](https://github.com/advisories/GHSA-4g42-gqrg-4633)
 * [CVE-2023-49735 - Apache Tiles: Unvalidated input may lead to path traversal and XXE](https://github.com/advisories/GHSA-qw4h-3xjj-84cc)
+* [CVE-2025-54656— Apache Struts Extras: Improper Output Neutralization for Logs]
 
 ## Building Strus1 - Reloaded
 
 ### Prerequisites
 
 * Apache Maven 3.8.1\+
-* JDK 11\+
+* JDK 17\+
 * for integration-tests
   * Web-Browser:
     * Chrome
